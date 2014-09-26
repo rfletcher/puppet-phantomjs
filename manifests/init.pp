@@ -26,7 +26,6 @@ class phantomjs (
 ) {
   include ::apt
 
-  # Make sure 5.1 is available
   ::apt::ppa { 'ppa:forger/phantomjs': } ->
   ::apt::pin { 'forger-phantomjs':
     originator => "LP-PPA-forger-phantomjs",
