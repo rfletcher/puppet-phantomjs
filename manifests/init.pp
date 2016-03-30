@@ -33,6 +33,7 @@ class phantomjs (
   } ->
 
   package { 'phantomjs':
-    ensure => $ensure,
+    ensure  => $ensure,
+    require => Class['apt::update'],
   }
 }
